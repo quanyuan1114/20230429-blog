@@ -2,7 +2,8 @@ import { env } from "cloudflare:workers";
 
 export const EDITOR_COOKIE = "firefly_editor";
 export const SESSION_TTL_SECONDS = 24 * 60 * 60;
-const PBKDF2_ITERATIONS = 310_000;
+// Cloudflare Workers currently caps PBKDF2 at 100,000 iterations per call.
+const PBKDF2_ITERATIONS = 100_000;
 const LOGIN_WINDOW_SECONDS = 15 * 60;
 const MAX_LOGIN_FAILURES = 5;
 
