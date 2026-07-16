@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const title = "博士研究规划 · AI × 电池健康 × 能源系统";
+const description =
+  "控制科学与工程博士研究规划：以电池健康管理为应用锚点，以时序基础模型、物理约束学习和安全优化为方法主线。";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://20230429.xyz"),
-  title: "Firefly · 记录思考，也记录生活",
-  description: "quanyuan1114 的个人博客，记录技术、阅读与日常里的微小发现。",
+  title,
+  description,
   openGraph: {
-    title: "Firefly · 记录思考，也记录生活",
-    description: "记录技术、阅读与日常里的微小发现。",
+    title,
+    description,
     url: "https://20230429.xyz",
-    siteName: "Firefly",
+    siteName: "Firefly Research",
     locale: "zh_CN",
     type: "website",
     images: [
@@ -17,14 +21,14 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1536,
         height: 1024,
-        alt: "Firefly · 记录思考，也记录生活",
+        alt: "博士研究规划：AI × 电池健康 × 能源系统",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Firefly · 记录思考，也记录生活",
-    description: "记录技术、阅读与日常里的微小发现。",
+    title,
+    description,
     images: ["/og.png"],
   },
 };
