@@ -1,6 +1,6 @@
 ---
 type: note
-title: "Prompt 提示词技巧：从模糊需求到可执行指令"
+title: "Prompt 提示词技巧"
 slug: prompt-engineering-practical-guide
 summary: "用角色、背景、任务、约束、格式和验收标准组织 Prompt，并通过示例、分步执行与自检机制提高大模型输出质量。"
 tags:
@@ -10,7 +10,7 @@ tags:
   - "方法论"
 status: published
 createdAt: 2026-07-16T13:00:00.000Z
-updatedAt: 2026-07-16T13:00:00.000Z
+updatedAt: 2026-07-16T13:29:39.007Z
 ---
 
 # Prompt 提示词技巧：从模糊需求到可执行指令
