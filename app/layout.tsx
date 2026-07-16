@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const title = "博士研究规划 · AI × 电池健康 × 能源系统";
+const title = "Firefly · 个人学术工作台";
 const description =
-  "控制科学与工程博士研究规划：以电池健康管理为应用锚点，以时序基础模型、物理约束学习和安全优化为方法主线。";
+  "人工智能方向博士研究生的个人学术工作台，记录研究规划、学习笔记、学习心得与文献阅读。";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://20230429.xyz"),
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: "https://20230429.xyz",
-    siteName: "Firefly Research",
+    siteName: "Firefly Academic Workspace",
     locale: "zh_CN",
     type: "website",
     images: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1536,
         height: 1024,
-        alt: "博士研究规划：AI × 电池健康 × 能源系统",
+        alt: "Firefly 个人学术工作台：研究规划、学习笔记与文献阅读",
       },
     ],
   },
