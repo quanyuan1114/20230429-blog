@@ -201,6 +201,7 @@ test("authenticated saves use the GitHub contents API and preserve conflict safe
     assert.equal(response.status, 200);
     assert.match(captured.url, /repos\/quanyuan1114\/20230429-blog\/contents\/content\/notes\/api-test\.md/);
     assert.equal(captured.init.method, "PUT");
+    assert.equal(captured.init.headers.get("User-Agent"), "Firefly-Academic-Workspace");
     const requestBody = JSON.parse(captured.init.body);
     assert.equal(requestBody.branch, "main");
     assert.match(requestBody.message, /save api-test/);

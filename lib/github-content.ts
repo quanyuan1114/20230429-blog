@@ -61,6 +61,7 @@ async function githubRequest(path: string, init: RequestInit = {}) {
   const headers = new Headers(init.headers);
   headers.set("Accept", "application/vnd.github+json");
   headers.set("X-GitHub-Api-Version", "2022-11-28");
+  headers.set("User-Agent", "Firefly-Academic-Workspace");
   if (token) headers.set("Authorization", `Bearer ${token}`);
 
   return fetch(`https://api.github.com${path}`, {
